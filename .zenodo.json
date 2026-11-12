@@ -1,0 +1,56 @@
+{
+  "upload_type": "dataset",
+  "title": "STARTUP Cultural Places Dataset",
+  "description": "<p>Art and cultural places in European cities, curated for the STARTUP project (Horizon Europe). Covers eight cities/regions: Dortmund/Bochum/Gelsenkirchen (Ruhr), Madrid, Stockholm, Rome, Gdańsk, Sevilla, Trenčín, and Eurométropole de Strasbourg. Combines data from the Overture Maps Foundation places theme (release 2025-05-21.0) with locally curated submissions, filtered by official Eurostat GISCO LAU 2024 and Etalab EPCI boundaries.</p>",
+  "version": "1.0.0",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Liistamo, Magnus",
+      "affiliation": "Stockholm University, Department of Human Geography",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "keywords": [
+    "cultural venues",
+    "art spaces",
+    "Europe",
+    "Overture Maps",
+    "GeoJSON",
+    "urban cultural infrastructure",
+    "Horizon Europe",
+    "STARTUP"
+  ],
+  "grants": [
+    {
+      "id": "10.3030/101178523"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "eu"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Liistamo/cultural_data",
+      "relation": "isDerivedFrom",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://docs.overturemaps.org",
+      "relation": "references",
+      "resource_type": "dataset"
+    }
+  ],
+  "dates": [
+    {
+      "date": "2026-08-31",
+      "type": "Collected",
+      "description": "Date of data extraction from Overture Maps and local sources"
+    }
+  ],
+  "language": "eng",
+  "notes": "This project has received funding from the European Union's Horizon Europe research and innovation programme under Grant Agreement No 101178523."
+}
