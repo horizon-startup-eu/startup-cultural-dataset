@@ -55,7 +55,7 @@ All coordinates are in **WGS84 (EPSG:4326)**. In the GeoJSON file, geometry foll
 
 ## How to cite
 
-> Liistamo, M. (2026). *STARTUP Cultural Places Dataset* (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+> Borén, T., & Liistamo, M. (2026). *STARTUP Cultural Places Dataset* (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
 
 Replace the DOI placeholder with the actual DOI after publication.
 
@@ -77,5 +77,6 @@ Views and opinions expressed are those of the author(s) only and do not necessar
 
 ## Contact
 
+Thomas Borén — Thomas.Boren@humangeo.su.se
 Magnus Liistamo — magnus.liistamo@humangeo.su.se
 Department of Human Geography, Stockholm University

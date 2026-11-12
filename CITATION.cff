@@ -4,6 +4,11 @@ message: >-
   If you use this dataset, please cite it using the metadata from this file.
 type: dataset
 authors:
+  - given-names: Thomas
+    family-names: Borén
+    email: Thomas.Boren@humangeo.su.se
+    affiliation: Stockholm University, Department of Human Geography
+    orcid: https://orcid.org/0000-0000-0000-0000
   - given-names: Magnus
     family-names: Liistamo
     email: magnus.liistamo@humangeo.su.se
