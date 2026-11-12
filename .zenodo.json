@@ -39,7 +39,7 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/Liistamo/cultural_data",
+      "identifier": "https://github.com/horizon-startup-eu/startup-cultural-data",
       "relation": "isDerivedFrom",
       "resource_type": "software"
     },

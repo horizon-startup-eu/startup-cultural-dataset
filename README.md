@@ -49,7 +49,7 @@ All coordinates are in **WGS84 (EPSG:4326)**. In the GeoJSON file, geometry foll
 
 - **Boundary data:** Eurostat GISCO LAU 2024 (1:1M, EPSG:4326); Etalab EPCI (SIREN 246700488)
 - **Places data:** Overture Maps Foundation, places theme, release 2025-05-21.0 (CDLA Permissive 2.0)
-- **Processing code:** [startup-cultural-data](https://github.com/Liistamo/cultural_data) (Apache 2.0)
+- **Processing code:** [startup-cultural-data](https://github.com/horizon-startup-eu/startup-cultural-data) (Apache 2.0)
 - **Extraction date:** 2026-08-31
 - **Processing pipeline version:** commit `ba78758` of startup-cultural-data
 
