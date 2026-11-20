@@ -6,68 +6,39 @@ Art and cultural places in European cities, curated for the STARTUP project (Hor
 
 This dataset maps art and cultural venues across eight European cities/regions. It combines data from the Overture Maps Foundation *places* theme (release 2025-05-21.0) with locally curated submissions, filtered by official municipal boundaries from Eurostat GISCO LAU 2024 and Etalab EPCI.
 
-**Cities covered:** Dortmund/Bochum/Gelsenkirchen (Ruhr area), Madrid, Stockholm, Rome, Gdansk, Sevilla, Trencin, Eurometropole de Strasbourg.
+**Cities:** Dortmund/Bochum/Gelsenkirchen (Ruhr), Madrid, Stockholm, Rome, Gdansk, Sevilla, Trencin, Eurometropole de Strasbourg.
 
-**Total records:** ~2100 cultural places (v1.0.0).
+**Records:** ~2100 cultural places. Coordinates in WGS84 (EPSG:4326).
 
-## Files
+## Fields
 
-| File | Format | Description |
-|------|--------|-------------|
-| `startup-cultural-dataset_v1.0.0.geojson` | GeoJSON (RFC 7946) | Primary dataset with point geometries (WGS84 / EPSG:4326) |
-| `startup-cultural-dataset_v1.0.0.csv` | CSV (UTF-8, BOM) | Flat tabular version with latitude/longitude columns |
-| `DATA_DICTIONARY.md` | Markdown | Field definitions, types, and allowed values |
-| `CHANGELOG.md` | Markdown | Version history |
-| `LICENSE` | Text | CC BY 4.0 legalcode |
+| Field | Description |
+|-------|-------------|
+| `name` | Name of the venue |
+| `category` | Normalized category, e.g. `art_gallery`, `theatre`, `cultural_center` |
+| `city` | City or metropolitan area |
+| `website` | URL |
+| `comments` | Optional notes |
+| `source` | `user_submitted` if added manually; empty if from Overture |
 
-## Data dictionary (summary)
-
-| Field | Type | Description |
-|-------|------|-------------|
-| `name` | string | Name of the venue |
-| `category` | string | Normalized category (snake_case), e.g. `art_gallery`, `theatre`, `cultural_center` |
-| `city` | string | City or metropolitan area name |
-| `latitude` | float | WGS84 latitude (CSV only) |
-| `longitude` | float | WGS84 longitude (CSV only) |
-| `website` | string | URL, normalized with `https://` prefix |
-| `comments` | string | Optional free-text notes |
-| `source` | string | `user_submitted` if added manually; empty if from Overture |
-
-See `DATA_DICTIONARY.md` for full details.
-
-## Coordinate reference system
-
-All coordinates are in **WGS84 (EPSG:4326)**. In the GeoJSON file, geometry follows the `[longitude, latitude]` convention per RFC 7946. In the CSV, separate `latitude` and `longitude` columns are provided.
-
-## Coverage and known limitations
-
-- 17 records lack coordinates (digital-only presences); these have `null` geometry in GeoJSON and empty lat/lon in CSV.
-- Category normalization maps ~70 fine-grained types to a controlled vocabulary. Categories prefixed with `Startup` are project-specific additions not in the Overture taxonomy.
-- The Ruhr area aggregates three municipalities into one unit; Eurometropole de Strasbourg is an EPCI comprising multiple communes.
+Coordinates are stored in `geometry.coordinates` as `[longitude, latitude]` per GeoJSON spec. 17 records lack coordinates (`"geometry": null`).
 
 ## Provenance
 
-- **Boundary data:** Eurostat GISCO LAU 2024 (1:1M, EPSG:4326); Etalab EPCI (SIREN 246700488)
-- **Places data:** Overture Maps Foundation, places theme, release 2025-05-21.0 (CDLA Permissive 2.0)
+- **Places:** Overture Maps Foundation, release 2025-05-21.0 (CDLA Permissive 2.0)
+- **Boundaries:** Eurostat GISCO LAU 2024; Etalab EPCI (SIREN 246700488)
 - **Processing code:** [startup-cultural-data](https://github.com/horizon-startup-eu/startup-cultural-data) (Apache 2.0)
 - **Extraction date:** 2026-08-31
-- **Processing pipeline version:** commit `ba78758` of startup-cultural-data
 
 ## How to cite
 
 > Borén, T., & Liistamo, M. (2026). *STARTUP Cultural Places Dataset* (v1.0.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
 
-Replace the DOI placeholder with the actual DOI after publication.
-
 ## License
 
-This dataset is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 
-Third-party data attributions:
-- Overture Maps Foundation — Places (CDLA Permissive 2.0)
-- Eurostat GISCO — LAU 2024 (reuse policy: free reuse with attribution)
-- Etalab — EPCI (Licence Ouverte 2.0)
-- OpenStreetMap contributors (ODbL) — basemap tiles only, not included in dataset
+Third-party attributions: Overture Maps Foundation (CDLA Permissive 2.0), Eurostat GISCO (free reuse with attribution), Etalab (Licence Ouverte 2.0).
 
 ## EU funding acknowledgement
 
